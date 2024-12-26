@@ -4,6 +4,9 @@
     "scripts": {
         "ng": "ng",
         "start": "ng serve --port 8080",
+        "delete:docs": "rm -r docs",
+        "copy:files": "mkdir docs && cp -r ./dist/bases/browser/* ./docs/",
+        "build:github:pages": "npm run delete:docs && ng build  --base-href ./ && npm run copy:files",
         "build": "ng build",
         "watch": "ng build --watch --configuration development",
         "test": "ng test"
