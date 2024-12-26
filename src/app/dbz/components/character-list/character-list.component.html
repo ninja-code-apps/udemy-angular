@@ -1,0 +1,24 @@
+<div class="first-data-grid nj-data-grid" style="--cols: 5;">
+    <div class="title">
+        <div>ID</div>
+        <div>Name</div>
+        <div>Race</div>
+        <div>Power</div>
+        <div></div>
+    </div>
+    <div *ngFor="
+    let item of characters; 
+    let isEven = even;
+    let index = index;
+    "
+        class="item"
+        [ngClass]="{'--even': isEven}">
+        <div>{{ item.id }}</div>
+        <div>{{ item.name }}</div>
+        <div>{{ item.race }}</div>
+        <div>{{ item.power }}</div>
+        <div>
+            <button (click)="delete(item.id)">delete</button>
+        </div>
+    </div>
+</div>

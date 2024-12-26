@@ -1,0 +1,45 @@
+.nj-data-grid {
+    --cols: 2;
+    --padding: 8px;
+    --rows: 10;
+
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: calc((var(--rows) + 1) * ((var(--padding) * 2) + 12px + 1px));
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    .--even {
+        background-color: #ffe478;
+    }
+
+    .title {
+        display: grid;
+        grid-template-columns: repeat(var(--cols), 1fr);
+        gap: 0;
+        border-width: 0 0 1px 0;
+        border-color: #ccc;
+        border-style: solid;
+        padding: var(--padding);
+        background-color: #fff;
+
+        position: sticky;
+        top: 0;
+    }
+
+    .item {
+        display: grid;
+        grid-template-columns: repeat(var(--cols), 1fr);
+        gap: 0;
+        border-width: 0 0 1px 0;
+        border-color: #ccc;
+        border-style: solid;
+        padding: var(--padding);
+    }
+
+    .item:last-child {
+        border-width: 0 0 0 0;
+    }
+
+}

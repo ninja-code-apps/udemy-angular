@@ -1,0 +1,37 @@
+:root {
+    --base-font-color: #333;
+    --base-radius: 4px;
+    --base-border: 1px solid #ccc;
+    --base-bg-color: #fff;
+
+}
+
+* {
+    font: 12px "Open Sans";
+    color: var(--base-font-color);
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+}
+
+body {
+    padding: 12px;
+}
+
+button {
+    border: var(--base-border);
+    background-color: var(--base-bg-color);
+    line-height: 1;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: var(--base-radius);
+}
+
+input[type="text"] {
+    border: var(--base-border);
+    background-color: var(--base-bg-color);
+    line-height: 1;
+    padding: 6px 8px 5px 8px;
+    border-radius: var(--base-radius);
+}

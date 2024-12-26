@@ -1,1 +1,5 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("./app/css/base.css");
+@import url("./app/css/main.css");
+@import url("./app/css/nj-grid.css");
+@import url("./app/css/nj-flex.css");
+@import url("./app/css/nj-data-grid.css");

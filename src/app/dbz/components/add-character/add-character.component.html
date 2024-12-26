@@ -1,0 +1,20 @@
+<div class="nj-grid">
+    <div>
+        <div>Name</div>
+        <input type="text" [(ngModel)]="character.name">
+    </div>
+    <div>
+        <div>Race</div>
+        <input type="text" [(ngModel)]="character.race">
+    </div>
+    <div>
+        <div>Power</div>
+        <input type="text" [(ngModel)]="character.power">
+    </div>
+</div>
+<div class="nj-flex">
+    <button (click)="emitCharacter()">Add</button>
+</div>
+<br>
+<br>
+<pre>{{ character | json }}</pre>

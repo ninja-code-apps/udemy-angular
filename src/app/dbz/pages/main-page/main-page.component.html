@@ -1,0 +1,10 @@
+<div class="nj-grid --c2 --g24">
+    <div>
+        <div class="nj-title --t3">List</div>
+        <app-character-list [characters]="characters" (onDeleteCharacter)="deleteCharacter($event)"></app-character-list>
+    </div>
+    <div>
+        <div class="nj-title --t3">Form</div>
+        <app-add-character (onNewCharacter)="addCharacter($event)"></app-add-character>
+    </div>
+</div>

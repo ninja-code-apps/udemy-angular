@@ -1,0 +1,19 @@
+.nj-title {
+    --size: 14px;
+    font-size: var(--size);
+    font-weight: bold;
+    margin-bottom: 12px;
+
+    &.--t1 {
+        --size: 14px
+    }
+
+    &.--t2 {
+        --size: 16px
+    }
+
+    &.--t3 {
+        --size: 18px
+    }
+
+}
